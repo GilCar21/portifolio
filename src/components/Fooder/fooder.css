@@ -13,7 +13,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1rem 2rem;
-    gap: 34%;
+    gap: 32%;
 }
 
 @media screen and (max-width: 900px){
