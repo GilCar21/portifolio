@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import {FaGithub, FaLinkedin, FaInstagram  } from 'react-icons/fa'
 
 export function Header() {
     return (
@@ -16,13 +17,13 @@ export function Header() {
                 <div className='redes'>
                 <a name="sobre"></a>
                     <a href="https://github.com/GilCar21">
-                        <img src="../../../assets/github.png" alt="github" />
+                        <FaGithub className='icon'/>
                     </a>
                     <a href="https://www.linkedin.com/in/gilbertojcneto/">
-                        <img src="../../../assets/linkedin.png" alt="linkedin" />
+                        <FaLinkedin className='icon' />
                     </a>
                     <a href="https://www.instagram.com/gilberto_carvalho21/">
-                        <img src="../../../assets/instagram.png" alt="Instagram" />
+                        <FaInstagram className='icon' />
                     </a>
                 </div>
             </div>

@@ -1,6 +1,10 @@
 import React from 'react';
 import './projects.css'
 
+import em_breve from '../../assets/breve.jpg'
+import cracha from '../../assets/cracha.jpeg'
+import devfinance from '../../assets/devfinance.jpeg'
+
 export function Projects() {
     return (
         <section className='projects_container'>
@@ -12,7 +16,7 @@ export function Projects() {
 
                 <div className="project_item">
                     <div className="project_item_image">
-                        <img src="../../../assets/cracha.jpeg" alt="" />
+                        <img src={cracha} alt="" />
                     </div>
                     <h4>Cracha virtual</h4>
                     <div className="links_project">
@@ -23,7 +27,7 @@ export function Projects() {
 
                 <div className="project_item">
                     <div className="project_item_image">
-                        <img src="../../../assets/devfinance.jpeg" alt="" />
+                        <img src={devfinance} alt="" />
                     </div>
                     <h4>Calcuradora de Trabalho</h4>
                     <div className="links_project">
@@ -34,7 +38,7 @@ export function Projects() {
 
                 <div className="project_item">
                     <div className="project_item_image">
-                        <img src="../../../assets/breve.jpg" alt="" />
+                        <img src={em_breve} alt="" />
                     </div>
                     <h4>Titudo do projeto</h4>
                     <div className="links_project">

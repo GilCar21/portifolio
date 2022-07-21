@@ -1,4 +1,4 @@
-import BannerImg from "../../../assets/banner.png";
+import BannerImg from "../../assets/banner.png";
 import TypeAnimation from 'react-type-animation';
 import './Home.css'
 
