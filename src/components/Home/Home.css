@@ -1,0 +1,52 @@
+.main{
+    max-width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 2rem; 
+    margin-top: 3rem;
+}
+.main .text{
+    width: 50%;
+    text-align: justify;
+}
+
+.main .text .tagline{
+    margin: 0;
+    padding: 0;
+}
+
+.main .text h1{
+    margin: 0;
+}
+
+.main .text .decription{
+    margin: 0;
+}
+
+.main .image{
+    width: 50%;
+}
+
+.main .image img{
+    width: 100%;
+}
+
+@media screen and (max-width:1024px){
+    .main{
+        flex-direction: column;
+    }
+    .main .text{
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .main{
+        max-width: 90vw;
+    }
+    .main .text{
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+.fooder{
+    box-sizing: border-box;
+    margin-top: 2rem;
+    background: #28213a;
+    width: 85vw;
+    max-width: 1350px;
+    padding: 0 1rem;
+}
+
+.containerFooder{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 34%;
+}
+
+@media screen and (max-width: 900px){
+    .containerFooder{
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .containerFooder{
+        max-width: 90vw;
+    }
+}

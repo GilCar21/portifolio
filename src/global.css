@@ -1,0 +1,36 @@
+
+root{
+    --black: #0e0b16;
+    --violeta: #a239ca;
+    --blue: #4717f6;
+    --white: #e7dfdd;
+    --cards: #28213a;
+}
+html{
+    background-color: #0e0b16;
+    color: #e7dfdd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 85vw;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:600px){
+    body{
+        width: 90vw;
+    }
+}
