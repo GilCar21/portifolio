@@ -10,7 +10,7 @@ export function Header() {
     return (
         <div id='fixed'>
             <div className='header'>
-                <h2>Portifolio</h2>
+                <h2>Portfólio</h2>
                 {/* <div className="menu" onClick={showSidebar}>
                     <MdOutlineMenu className='icon_menu'/>
                 </div> */}
