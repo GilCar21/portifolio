@@ -16,6 +16,13 @@
     padding: 1rem 0;
     margin: 0 auto;
 }
+.containerFooder a{
+    text-decoration: none;
+    color: #e7dfdd;
+}
+.contact_icon{
+    font-size: 2rem;
+}
 
 @media screen and (max-width:600px){
     .containerFooder{

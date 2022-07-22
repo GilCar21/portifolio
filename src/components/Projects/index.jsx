@@ -4,6 +4,8 @@ import './projects.css'
 import em_breve from '../../assets/breve.jpg'
 import cracha from '../../assets/cracha2.jpeg'
 import devfinance from '../../assets/devfinance2.jpeg'
+import chat from '../../assets/chat.jpeg'
+import coffe from '../../assets/coffe.jpeg'
 
 export function Projects() {
     return (
@@ -33,6 +35,28 @@ export function Projects() {
                     <div className="links_project">
                         <a href="https://github.com/GilCar21/PrimeiraMaratonaDiscoverRocketset" className='btn' target="_blank">Github</a>
                         <a href="https://calculadorafinacegil.netlify.app/" className='btn btn-primary' target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div className="project_item">
+                    <div className="project_item_image">
+                        <img src={chat} alt="" />
+                    </div>
+                    <h4>Feedback widget com React</h4>
+                    <div className="links_project">
+                        <a href="https://github.com/GilCar21/nlw-return" className='btn' target="_blank">Github</a>
+                        <a href="https://nlw-return-4w6niuacm-gilcar21.vercel.app/" className='btn btn-primary' target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div className="project_item">
+                    <div className="project_item_image">
+                        <img src={coffe} alt="" />
+                    </div>
+                    <h4>Landing page de Café</h4>
+                    <div className="links_project">
+                        <a href="https://github.com/GilCar21/RocketCoffe" className='btn' target="_blank">Github</a>
+                        <a href="https://rocketcoffegil.netlify.app/" className='btn btn-primary' target="_blank">Live Demo</a>
                     </div>
                 </div>
 
