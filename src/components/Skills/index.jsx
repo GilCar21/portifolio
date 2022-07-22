@@ -5,7 +5,7 @@ import './skills.css'
 export function Skills() {
   return (
     <section className='section_skills skills'>
-        <a name="skills"></a>
+        
         <div className='title'>
             <h3> Minhas Skills</h3>
         </div>
@@ -70,12 +70,13 @@ export function Skills() {
                     <h4>TypeScript</h4>
                     <p>Básico</p>
                     </div>
+                   
                 </div>
-
+                <a name="projetos"></a>
             </div>
-
+            
         </div>
-
+        
     </section>
   );
 }

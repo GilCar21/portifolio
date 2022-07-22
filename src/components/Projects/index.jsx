@@ -2,13 +2,13 @@ import React from 'react';
 import './projects.css'
 
 import em_breve from '../../assets/breve.jpg'
-import cracha from '../../assets/cracha.jpeg'
-import devfinance from '../../assets/devfinance.jpeg'
+import cracha from '../../assets/cracha2.jpeg'
+import devfinance from '../../assets/devfinance2.jpeg'
 
 export function Projects() {
     return (
         <section className='projects_container'>
-            <a name="projetos"></a>
+           
             <div className='title'>
                 <h3>Projects</h3>
             </div>
@@ -40,14 +40,16 @@ export function Projects() {
                     <div className="project_item_image">
                         <img src={em_breve} alt="" />
                     </div>
-                    <h4>Titudo do projeto</h4>
+                    <h4>Em Breve</h4>
                     <div className="links_project">
                         <a href="https://github.com/GilCar21" className='btn' target="_blank">Github</a>
                         <a href="https://github.com/GilCar21" className='btn btn-primary' target="_blank">Live Demo</a>
+                        <a name="contato"></a>
                     </div>
                 </div>
-
+                
             </div>
+            
         </section>
     );
 }

@@ -7,7 +7,7 @@ import './contact.css'
 export function Contact() {
   return (
     <section className='contact'>
-      <a name="contato"></a>
+      
       <h3>Gostou do meu trabalho e quer trabalhar comigo?</h3>
       <h4>Entre em contado</h4>
       <div className='containerContact'>
@@ -23,7 +23,7 @@ export function Contact() {
             <SiWhatsapp className='contact_icon'/>
             <h4>WhatsApp</h4>
             <h5>(84) 9 8796-9544</h5>
-            <a href="https://api.whatsapp.com?send?phone+5584987969544" target="_blank">Send a message</a>
+            <a href="https://wa.me/5584987969544" target="_blank">Send a message</a>
           </div>
 
         </div>
