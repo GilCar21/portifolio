@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 2;
 }
 .header{ 
     width: 85vw;
@@ -21,9 +21,17 @@
     width: 70%;
     margin-left: auto;
 }
+.links_header .redes{
+    display: flex;
+    gap: .3rem;
+}
 .icon{
     font-size: 2.2rem;
     color: #e7dfdd;
+}
+.icon:hover{
+    font-size: 2.4rem;
+    color: white;
 }
 
 .links_header .nav{
@@ -37,16 +45,17 @@
     text-decoration: none;
     color: #e7dfdd;
 }
+.links_header .nav a:hover{
+    font-size: 1.2rem;
+    color: white;
+}
 @media screen and (max-width:690px){
     #fixed{
-        height: 6.8rem;
-    }
-    .header{
-        padding-top: 0;
-        margin-top: 0.2rem;
+        height: 5rem;
     }
     .links_header .nav{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
     }
 
@@ -54,5 +63,10 @@
 @media screen and (max-width:600px){
     .header{
         width: 90vw;
+    }
+}
+@media screen and (max-width:418px){
+    #fixed{
+        height: 6.8rem;
     }
 }

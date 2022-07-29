@@ -29,6 +29,9 @@
     border-radius: 1.5rem;
     object-fit: cover
 }
+.project_item_image img:hover{
+    border: #4717f6 solid 1px;
+}
 /* .project_item_image .cracha{
     width: 100%;
     background-image: ;
