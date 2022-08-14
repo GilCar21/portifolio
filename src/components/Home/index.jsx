@@ -13,7 +13,6 @@ export const Home = () => {
         <p className="tagline">Bem vindo ao meu Portfólio </p>
         <h1>  Olá! Me chamo <br /> Gilberto <br /> E sou: <br />
           <TypeAnimation
-            wrapper="none"
             repeat={Infinity}
             sequence={[
               "Desenvolvedor Web",

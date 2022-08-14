@@ -52,7 +52,7 @@
 .menu{
     display: none;
 }
-@media screen and (max-width:690px){
+@media screen and (max-width:700px){
     #fixed{
         height: 4rem;
         transition: .2s;
@@ -87,10 +87,5 @@
 @media screen and (max-width:600px){
     .header{
         width: 90vw;
-    }
-}
-@media screen and (max-width:418px){
-    #fixed{
-        height: 6.8rem;
     }
 }

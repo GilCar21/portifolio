@@ -5,27 +5,34 @@ import { MdOutlineMenu } from 'react-icons/md'
 
 
 export function Header() {
-    const [sidebar, setSidebar]= useState(false)
-    const [active, setActive] = useState({})
-    useEffect(()=>{
-        if(sidebar){
-            setActive({ visibility: 'visible' })
+    const [active, setActive]= useState(false)
+    const [sidebar, setSidebar] = useState({})
+    // useEffect(()=>{
+    //     if(active){
+    //         setSidebar({ visibility: 'visible' })
+    //     }else{
+    //         setSidebar({ visibility: 'hidden' })
+    //     }
+    // },[active])
+    const handleActive = ()=>{
+        setActive(!active)
+        
+        if(!active){
+            setSidebar({ visibility: 'visible' })
         }else{
-            setActive({ visibility: 'hidden' })
+            setSidebar({ visibility: 'hidden' })
         }
-    },[sidebar])
+    }
+
     return (
-        <div id='fixed' className={sidebar ? 'active' : ''}>
+        <div id='fixed' className={active ? 'active' : ''}>
             <div className='header' >
                 <h2>Portfólio</h2>
-                {/* <div className="menu" onClick={showSidebar}>
-                    <MdOutlineMenu className='icon_menu'/>
-                </div> */}
                     <div className='menu'>
-                        <MdOutlineMenu size={32} onClick={()=>setSidebar(!sidebar)}/>
+                        <MdOutlineMenu size={32} onClick={handleActive}/>
                     </div>
                 <div className='links_header' >
-                    <div className='nav' style={active}>
+                    <div className='nav' style={sidebar}>
                         <a href="#sobre" rel="noopener noreferrer">Sobre</a>
                         <a href="#skills" rel="noopener noreferrer">Habilidades</a>
                         <a href="#projetos" rel="noopener noreferrer">Projetos</a>
