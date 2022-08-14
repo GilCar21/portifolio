@@ -6,6 +6,7 @@ import cracha from '../../assets/cracha2.jpeg'
 import devfinance from '../../assets/devfinance2.jpeg'
 import chat from '../../assets/chat.jpeg'
 import coffe from '../../assets/coffe.jpeg'
+import reactflix from '../../assets/reactflix.jpeg'
 
 export function Projects() {
     return (
@@ -15,6 +16,17 @@ export function Projects() {
                 <h3>Projects</h3>
             </div>
             <div className='galeri_projects'>
+
+            <div className="project_item">
+                    <div className="project_item_image">
+                        <img src={reactflix} alt="" />
+                    </div>
+                    <h4>Clone Netflix cadastro</h4>
+                    <div className="links_project">
+                        <a href="https://github.com/GilCar21/reactflix" className='btn' target="_blank">Github</a>
+                        <a href="https://reactflix-sigma-peach.vercel.app/" className='btn btn-primary' target="_blank">Live Demo</a>
+                    </div>
+                </div>
 
                 <div className="project_item">
                     <div className="project_item_image">

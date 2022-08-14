@@ -37,25 +37,43 @@
 .container .card .content-skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    gap: 2rem;
 }
 
+.content-skills .skill{
+    padding: 1rem;
+    background: #2f2842;
+    border: 2px solid #4717f6;
+    color: #e7dfdd;
+    border-radius: 8px;
 
+    transition: .2s;
+}
+.content-skills .skill:hover{
+    background: #4717f6;
+    border: 2px solid #e7dfdd;
+    
+}
 .content-skills .skill h4{
     margin-bottom: .1rem;
 }
 
-.content-skills .skill p{
-    margin-top: .1rem;
-}
 @media screen and (max-width:900px){
     .section_skills .container{
         grid-template-columns: 1fr;
+
     }
     
 }
 @media screen and (max-width:600px){
     .section_skills{
         max-width: 90vw;
+    }
+    .section_skills .container .card{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .container .card .content-skills{
+        gap: 2rem 1rem;
     }
 }

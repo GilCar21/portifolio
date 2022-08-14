@@ -6,7 +6,7 @@ export function Fooder() {
     return (
         <div className="fooder">
             <div className='containerFooder'>
-                <p>Gilberto Jorge<br /> 2022</p>
+                <p>Criado por Gilberto | Todos os direitos reservados 2022</p>
             </div>
         </div>
 
