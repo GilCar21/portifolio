@@ -28,7 +28,7 @@
 }
 .contact_options .contact_option:hover{
     background-color: transparent;
-    border-color: var(--white);
+    box-shadow: 0 0 8px 0 #e7dfdd inset, 0 0 8px 3px #e7dfdd;
 }
 .contact_icon{
     font-size: 2rem;
@@ -81,6 +81,7 @@ form button{
     transition: .7s;
 }
 form button:hover{
+    box-shadow: 0 0 8px 0 #e7dfdd inset, 0 0 8px 3px #e7dfdd;
     opacity: 1;
     cursor: pointer;
 }

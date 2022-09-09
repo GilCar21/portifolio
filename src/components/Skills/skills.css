@@ -18,8 +18,6 @@
 }
 .section_skills .container .card{
     padding: 1rem 3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
     transition: .5s;
     width: 100%;
     overflow: hidden;
@@ -83,6 +81,7 @@
 .content-skills .skill:hover{
     background: #4717f6;
     border: 2px solid #e7dfdd;
+    box-shadow: 0 0 8px 0 #4717f6 inset, 0 0 8px 3px #4717f6;
     
 }
 .content-skills .skill h4{

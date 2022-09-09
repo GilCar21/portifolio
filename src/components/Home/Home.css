@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6.5rem;
+    padding-top: 6.4rem;
 }
 .main .text{
     width: 50%;
@@ -28,7 +28,7 @@
 }
 
 .main .image img{
-    width: 100%;
+    width: 50%;
 }
 
 @media screen and (max-width:1024px){
@@ -36,16 +36,18 @@
         flex-direction: column;
     }
     .main .text{
-        width: 75%;
+        width: 100%;
         margin-bottom: 3rem;
     }
-    
+    .main .image{
+        width: 80%;
+    }
 }
 @media screen and (max-width:600px){
     .main{
         max-width: 90vw;
     }
-    .main .text{
+    .main .image{
         width: 100%;
     }
 }
