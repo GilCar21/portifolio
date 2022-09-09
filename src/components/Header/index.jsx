@@ -7,13 +7,6 @@ import { MdOutlineMenu } from 'react-icons/md'
 export function Header() {
     const [active, setActive]= useState(false)
     const [sidebar, setSidebar] = useState({})
-    // useEffect(()=>{
-    //     if(active){
-    //         setSidebar({ visibility: 'visible' })
-    //     }else{
-    //         setSidebar({ visibility: 'hidden' })
-    //     }
-    // },[active])
     const handleActive = ()=>{
         setActive(!active)
         

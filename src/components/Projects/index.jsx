@@ -7,21 +7,28 @@ import devfinance from '../../assets/devfinance2.jpeg'
 import chat from '../../assets/chat.jpeg'
 import coffe from '../../assets/coffe.jpeg'
 import reactflix from '../../assets/reactflix.jpeg'
+import { FaHtml5, FaReact} from 'react-icons/fa'
+import { TbBrandJavascript } from 'react-icons/tb'
 
 export function Projects() {
     return (
         <section className='projects_container'>
-           
+
             <div className='title'>
                 <h3>Projects</h3>
             </div>
             <div className='galeri_projects'>
 
-            <div className="project_item">
+                <div className="project_item">
                     <div className="project_item_image">
                         <img src={reactflix} alt="" />
                     </div>
                     <h4>Clone Netflix cadastro</h4>
+                    <div>
+                        <FaReact color='#FFF' size={24} />
+                        <FaHtml5 color='#FFF' size={24} />
+                        <TbBrandJavascript color='#FFF' size={24} />
+                    </div>
                     <div className="links_project">
                         <a href="https://github.com/GilCar21/reactflix" className='btn' target="_blank">Github</a>
                         <a href="https://reactflix-sigma-peach.vercel.app/" className='btn btn-primary' target="_blank">Live Demo</a>
@@ -83,9 +90,9 @@ export function Projects() {
                         <a name="contato"></a>
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </section>
     );
 }

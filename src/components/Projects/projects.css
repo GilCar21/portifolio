@@ -11,7 +11,7 @@
     margin-top: 1rem;
 }
 
-.galeri_projects .project_item{
+.project_item{
     background-color: #28213a;
     padding: 1.2rem;
     border-radius: 2rem;
@@ -28,7 +28,7 @@
     border: #4717f6 solid 1px;
 }
 
-.galeri_projects .project_item:hover{
+.project_item:hover{
     border-color: var(--white);
     background-color: transparent;
 }
@@ -43,10 +43,7 @@
 .project_item_image img:hover{
     transform: scale(1.2);
 }
-/* .project_item_image .cracha{
-    width: 100%;
-    background-image: ;
-} */
+
 .project_item .links_project{
     display: flex;
     justify-content: center;
@@ -64,10 +61,11 @@
     margin-bottom: 1rem;
     color: var(--white);
     opacity: .7;
-    transition: .8s;
+    transition: .2s;
 }
 .links_project .btn:hover{
-    opacity: 1;
+    background: transparent;
+    box-shadow: 0 0 8px 0 #a239ca inset, 0 0 8px 3px #a239ca;
 }
 
 @media screen and (max-width:1180px){

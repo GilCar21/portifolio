@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 6.5rem;
+    padding: 6.5rem;
 }
 .main .text{
     width: 50%;

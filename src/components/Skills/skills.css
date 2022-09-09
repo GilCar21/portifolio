@@ -1,3 +1,4 @@
+
 .section_skills{
     max-width: 85vw;
     display: flex;
@@ -8,25 +9,30 @@
 
 .section_skills .container{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    gap: 3rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-top: 1rem;
+    user-select: none;
+    overflow: hidden;
 }
 .section_skills .container .card{
-    background-color: #28213a;
-    padding: 2.4rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: .5s;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+
 }
 
-.section_skills .container .card:hover{
-    background-color: transparent;
+
+
+/* .section_skills .container .card:hover{
     border-color: var(--white);
     cursor: default;
-}
+} */
 
 .section_skills .container .card .title{
     text-align: center;
@@ -35,18 +41,43 @@
 }
 
 .container .card .content-skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+    animation: scroll-x 40s linear infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+    .container .card .content-skills {
+      animation-play-state: paused;
+    }
+  }
 
+  .container .card .content-skills.reverse{
+    animation-direction: reverse;
+  }
+
+  @keyframes scroll-x {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc((-250px - 1rem)*6));
+    }
+  }
+ 
 .content-skills .skill{
-    padding: 1rem;
+    min-width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: #2f2842;
     border: 2px solid #4717f6;
     color: #e7dfdd;
     border-radius: 8px;
-
     transition: .2s;
 }
 .content-skills .skill:hover{
@@ -58,13 +89,6 @@
     margin-bottom: .1rem;
 }
 
-@media screen and (max-width:900px){
-    .section_skills .container{
-        grid-template-columns: 1fr;
-
-    }
-    
-}
 @media screen and (max-width:600px){
     .section_skills{
         max-width: 90vw;

@@ -9,12 +9,12 @@ import { Fooder } from "./components/Fooder"
 function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Fooder />
+        <Header />
+        <Home />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Fooder />
     </>
   )
 }
