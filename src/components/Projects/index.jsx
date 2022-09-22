@@ -137,7 +137,6 @@ export function Projects() {
                     <h4>Em Breve</h4>
                     <div className="links_project">
                         <a href="https://github.com/GilCar21" className='btn' target="_blank">Github</a>
-                        <a href="https://github.com/GilCar21" className='btn btn-primary' target="_blank">Live Demo</a>
                         <a name="contato"></a>
                     </div>
                 </div>

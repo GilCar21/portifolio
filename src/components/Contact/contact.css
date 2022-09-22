@@ -1,7 +1,7 @@
 .contact{
     margin-top: 3rem;
     padding-bottom: 3rem;
-    
+    position: relative;
 }
 .containerContact{
     width: 70%;
@@ -86,6 +86,74 @@ form button:hover{
     cursor: pointer;
 }
 
+.message_err_campus{
+    display: none;
+}
+
+.message_err_campus.active{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: rgb(221, 39, 15);
+    color: #28213a;
+    border: #28213a solid 2px;
+    border-radius: 5px;
+    translate: -50%;
+}
+.message_err_campus.active::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(117, 31, 20, 0.404);
+    animation: progress 4s
+  }
+  @keyframes progress{
+    0% { width: 0% } 
+    100% { width: 100%}
+}
+.message_success{
+    display: none;
+}
+
+.message_success.active{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #06d328;
+    color: #28213a;
+    border: #28213a solid 2px;
+    border-radius: 5px;
+    translate: -50%;
+}
+.message_success.active::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-color: #2b4e30c9;
+    animation: progress 4s
+  }
+.success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
 @media screen and (max-width:1024px){
     .containerContact{
         grid-template-columns: 1fr;
@@ -99,3 +167,4 @@ form button:hover{
     }
 
 }
+
