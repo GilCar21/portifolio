@@ -53,7 +53,7 @@ export function Contact() {
           <div className='contact_option'>
             <MdOutlineMail className='contact_icon' />
             <h4>Email</h4>
-            <h5>gjcn@gmail.com</h5>
+            <h5>gjcn1997@gmail.com</h5>
             <a href="mailto:gilbertocarvalho1997" target="_blank">Send a message</a>
           </div>
           <div className='contact_option'>

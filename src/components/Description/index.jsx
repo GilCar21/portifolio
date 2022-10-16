@@ -1,14 +1,14 @@
 import BannerImg from "../../assets/banner.png";
 import TypeAnimation from 'react-type-animation';
-import './Home.css'
+import './description.css'
 
 export const Home = () => {
 
   return (
     
     <div className='main' >
-      <a name="sobre"></a>
       <div className='text'>
+        <a name="sobre"></a>
       
         <p className="tagline">Bem vindo ao meu Portfólio </p>
         <h1>  Olá! Me chamo <br /> Gilberto <br /> E sou: <br />
@@ -19,7 +19,7 @@ export const Home = () => {
               1500,
               "Engenheiro de Software",
               1500,
-
+              
             ]}
           />
         </h1>
@@ -28,8 +28,8 @@ export const Home = () => {
       
       <div className='image'>
         <img src={BannerImg} alt="Banner Img" />
-        <a name="skills"></a>
       </div>
+        
     </div>
   )
 }

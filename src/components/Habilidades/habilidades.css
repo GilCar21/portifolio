@@ -1,11 +1,35 @@
 
 .section_skills{
-    max-width: 85vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
 }
+.sombra{
+    position: relative;
+    width: 100%;
+}
+.sombra:before,.sombra:after {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
+		content: "";
+		display: block;
+		width: 25px;
+		height: 100%;
+	}
+	
+	.sombra:before {
+		left: 0;
+		background: linear-gradient(90deg, #0e0b16, transparent);
+	}
+	
+	.sombra:after {
+		right: 0;
+		background: linear-gradient(-90deg, #0e0b16, transparent);
+	}
 
 .section_skills .container{
     width: 100%;
@@ -17,7 +41,7 @@
     overflow: hidden;
 }
 .section_skills .container .card{
-    padding: 1rem 3rem;
+    padding: 1rem 0;
     transition: .5s;
     width: 100%;
     overflow: hidden;
@@ -89,13 +113,6 @@
 }
 
 @media screen and (max-width:600px){
-    .section_skills{
-        max-width: 90vw;
-    }
-    .section_skills .container .card{
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
     .container .card .content-skills{
         gap: 2rem 1rem;
     }

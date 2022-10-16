@@ -1,7 +1,10 @@
 .projects_container{
-    margin-top: 3rem;
     box-sizing: border-box;
-    max-width: 85vw;
+    width: 85vw;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .projects_container .galeri_projects{
@@ -17,6 +20,7 @@
     border-radius: 12px;
     border: 3px solid #4717f6;
     transition: .2s;
+    text-align: center;
     
 }
 .project_item_image{
@@ -40,7 +44,7 @@
     transition: all .2s;
 }
 .project_item_image img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .project_item .links_project{
@@ -54,7 +58,7 @@
     text-decoration: none;
     background: #a239ca;
     border-radius: .8rem;
-    border: solid 1px #4717f6;
+    border: solid 2px transparent;
     padding: .7rem 1rem;
     width: 148px;
     margin-bottom: 1rem;

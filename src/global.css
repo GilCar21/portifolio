@@ -1,5 +1,5 @@
 
-root{
+:root{
     --black: #0e0b16;
     --violeta: #a239ca;
     --blue: #4717f6;
@@ -34,15 +34,8 @@ body{
     }
   }
 #root{
-    width: 85vw;
-    max-width: 1350px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-}
-
-@media screen and (max-width:600px){
-    #root{
-        width: 90vw;
-    }
 }
